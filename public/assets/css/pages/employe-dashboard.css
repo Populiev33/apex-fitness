@@ -1,0 +1,156 @@
+.accueil-dashboard-page #topbar .tb-heading h1 { font-size: 13px; letter-spacing: .09em; text-transform: uppercase; }
+.accueil-dashboard-page #topbar .tb-heading h1::before { display: inline-block; width: 22px; height: 2px; margin: 0 10px 4px 0; background: #b7ef32; content: ''; }
+
+.accueil-dashboard-page .admin-content {
+  max-width: none;
+  min-height: calc(100vh - 66px);
+  padding: 0 0 28px;
+  background: #f5f6f5;
+}
+
+.accueil-dashboard-page .admin-flashes { padding: 14px 28px 0; }
+.accueil-dashboard { color: #17202b; }
+.accueil-hero {
+  min-height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 52px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(8, 12, 14, .94), rgba(8, 12, 14, .72) 48%, rgba(8, 12, 14, .12)), url('../../img/member-hero.jpg') center 48% / cover;
+}
+.accueil-hero .accueil-eyebrow { margin: 0 0 10px; color: #c6f432; font-size: 11px; font-weight: 800; letter-spacing: .15em; }
+.accueil-hero h2 { margin: 0; color: #fff; font-size: clamp(28px, 3vw, 40px); letter-spacing: -.035em; }
+.accueil-hero h2 span { color: #c6f432; }
+.accueil-hero > p:last-child { margin: 9px 0 0; color: #e1e5e2; font-size: 16px; }
+
+.accueil-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin: 18px 28px 22px;
+}
+.accueil-kpi {
+  min-width: 0;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px;
+  border: 1px solid #ecefed;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(21, 34, 28, .055);
+}
+.accueil-kpi-icon {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 23px;
+  font-weight: 700;
+}
+.accueil-kpi-icon.is-green { color: #278a2a; background: #e8f6e4; }
+.accueil-kpi-icon.is-orange { color: #e7831b; background: #fff0df; }
+.accueil-kpi > div { min-width: 0; display: grid; gap: 3px; }
+.accueil-kpi strong { color: #111923; font-size: 29px; line-height: 1.05; }
+.accueil-kpi-unit { font-size: 15px; font-weight: 600; }
+.accueil-kpi > div > span { color: #526071; font-size: 12px; }
+.accueil-kpi > div > small { color: #89939e; font-size: 10px; }
+
+.accueil-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 1fr);
+  align-items: start;
+  gap: 18px;
+  margin: 0 28px;
+}
+.accueil-dashboard-left, .accueil-dashboard-right { min-width: 0; display: grid; align-content: start; gap: 18px; }
+.accueil-panel, .accueil-quick-panel {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #ecefed;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(21, 34, 28, .045);
+}
+.accueil-panel-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 13px; border-bottom: 1px solid #edf0ed; }
+.accueil-panel-header h3, .accueil-quick-panel h3 { display: flex; align-items: center; gap: 10px; margin: 0; color: #17202b; font-size: 17px; }
+.accueil-panel-header h3 > span { color: #318a35; font-size: 20px; }
+.accueil-panel-header > a { flex: none; color: #368d2c; font-size: 12px; font-weight: 700; text-decoration: none; }
+.accueil-panel-header > a:hover { text-decoration: underline; }
+.accueil-agenda { position: relative; display: grid; gap: 0; margin: 0; padding: 4px 0 0; list-style: none; }
+.accueil-agenda::before { position: absolute; top: 28px; bottom: 28px; left: 77px; width: 2px; background: #dce3df; content: ''; }
+.accueil-agenda-item { position: relative; display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; align-items: center; gap: 17px; min-height: 70px; padding: 11px 0; border-bottom: 1px solid #f0f2f0; }
+.accueil-agenda-item:last-child { border-bottom: 0; }
+.accueil-agenda-item::before { position: absolute; left: 72px; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; background: #bfc8c3; content: ''; }
+.accueil-agenda-item.is-en-cours::before { background: #65bd35; box-shadow: 0 0 0 3px #e7f5df; }
+.accueil-agenda-item time { color: #75818e; font-size: 12px; font-weight: 650; }
+.accueil-agenda-copy { min-width: 0; display: grid; gap: 5px; padding-left: 17px; }
+.accueil-agenda-copy strong { overflow: hidden; color: #1a222c; font-size: 14px; text-overflow: ellipsis; white-space: nowrap; }
+.accueil-agenda-copy span { overflow: hidden; color: #71808e; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.accueil-course-status { padding: 6px 10px; border-radius: 999px; background: #eef0f1; color: #6e7882; font-size: 10px; white-space: nowrap; }
+.accueil-course-status.is-en-cours { background: #e4f4dd; color: #38872d; }
+.accueil-course-status.is-termine { background: #f3f4f4; color: #88919a; }
+.accueil-empty { margin: 18px 0 4px; color: #798590; font-size: 13px; }
+
+.accueil-quick-panel { padding: 19px; border-color: #e6efdc; background: linear-gradient(135deg, #f1f8e9, #eaf4df); }
+.accueil-quick-panel h3 { margin: 0 0 14px; }
+.accueil-quick-panel h3 > span { color: #60b92e; font-size: 24px; }
+.accueil-quick-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.accueil-quick-actions a { min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 10px; border: 1px solid #edf0ec; border-radius: 11px; background: #fff; color: #202a34; box-shadow: 0 3px 9px rgba(19, 32, 25, .05); font-size: 11px; text-align: center; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.accueil-quick-actions a:hover { transform: translateY(-2px); box-shadow: 0 7px 14px rgba(19, 32, 25, .09); }
+.accueil-quick-actions a > span { color: #328c30; font-size: 21px; line-height: 1; }
+.accueil-recent-panel { padding-bottom: 10px; }
+.accueil-recent-list { margin: 0; padding: 0; list-style: none; }
+.accueil-recent-list li { min-width: 0; min-height: 56px; display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; align-items: center; gap: 10px; border-bottom: 1px solid #f0f2f0; }
+.accueil-recent-list li:last-child { border-bottom: 0; }
+.accueil-recent-icon { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: #edf7e8; color: #3a9333; font-size: 12px; font-weight: 800; }
+.accueil-recent-copy { min-width: 0; display: grid; gap: 3px; }
+.accueil-recent-copy strong { overflow: hidden; color: #26313b; font-size: 11px; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
+.accueil-recent-copy small { color: #89939c; font-size: 10px; }
+.accueil-recent-list time { color: #89939c; font-size: 10px; white-space: nowrap; }
+.accueil-callout { min-height: 94px; display: flex; align-items: center; gap: 14px; padding: 17px 20px; overflow: hidden; border-radius: 13px; background: linear-gradient(90deg, rgba(12, 17, 17, .97), rgba(12, 17, 17, .82)), url('../../img/member-hero.jpg') center 65% / cover; color: #fff; }
+.accueil-callout-icon { color: #a5e52e; font-size: 33px; font-weight: 800; }
+.accueil-callout > div { min-width: 0; display: grid; gap: 5px; margin-right: auto; }
+.accueil-callout strong { font-size: 14px; }
+.accueil-callout > div > span { color: #c3cbc5; font-size: 10px; }
+.accueil-callout > a { flex: none; padding: 10px 14px; border-radius: 999px; background: #b7ef32; color: #18200c; font-size: 10px; font-weight: 800; text-decoration: none; }
+
+@media (max-width: 1180px) {
+  .accueil-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .accueil-dashboard-grid { grid-template-columns: minmax(0, 1fr) minmax(300px, .85fr); }
+}
+@media (max-width: 900px) {
+  .accueil-dashboard-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .accueil-dashboard-page .admin-content { padding-bottom: 20px; }
+  .accueil-hero { min-height: 170px; padding: 25px 20px; background-position: center; }
+  .accueil-hero > p:last-child { font-size: 13px; }
+  .accueil-kpis { gap: 9px; margin: 12px 12px 16px; }
+  .accueil-kpi { min-height: 94px; gap: 9px; padding: 11px 9px; }
+  .accueil-kpi-icon { flex-basis: 36px; width: 36px; height: 36px; font-size: 18px; }
+  .accueil-kpi strong { font-size: 22px; }
+  .accueil-kpi > div > span { font-size: 10px; }
+  .accueil-kpi > div > small { font-size: 9px; }
+  .accueil-dashboard-grid { gap: 12px; margin: 0 12px; }
+  .accueil-dashboard-left, .accueil-dashboard-right { gap: 12px; }
+  .accueil-panel, .accueil-quick-panel { padding: 15px 13px; }
+  .accueil-panel-header h3, .accueil-quick-panel h3 { font-size: 14px; }
+  .accueil-panel-header > a { font-size: 10px; }
+  .accueil-agenda-item { grid-template-columns: 43px minmax(0, 1fr); gap: 10px; min-height: 68px; }
+  .accueil-agenda::before { left: 57px; }
+  .accueil-agenda-item::before { left: 52px; }
+  .accueil-agenda-copy { padding-left: 12px; }
+  .accueil-agenda-copy strong { font-size: 12px; }
+  .accueil-course-status { grid-column: 2; justify-self: start; margin-left: 12px; padding: 4px 8px; }
+  .accueil-quick-actions { gap: 8px; }
+  .accueil-quick-actions a { min-height: 70px; font-size: 10px; }
+  .accueil-callout { flex-wrap: wrap; gap: 10px; padding: 14px; }
+  .accueil-callout > a { margin-left: 42px; }
+  .accueil-recent-list li { grid-template-columns: 22px minmax(0, 1fr); padding: 8px 0; }
+  .accueil-recent-list time { grid-column: 2; }
+}
